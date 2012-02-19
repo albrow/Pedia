@@ -1,0 +1,20 @@
+#!/bin/bash
+query=""
+if [ -z $1 ]; then
+  read -p "please enter a search term:  " query
+  echo ""
+fi
+for a in $@
+do
+  if [ $a != $1 ]; then
+    query+=" "
+  fi 
+  query+=$a
+done
+result=`dig +short txt "$query".wp.dg.cx`
+if [ ${#result} -ne 0 ]; then
+  echo $result
+else
+  echo -e "Sorry, no results found."
+fi
+exit
