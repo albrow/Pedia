@@ -1,4 +1,4 @@
-Pedia is a simple command line tool for querying wikipedia. The results appear directly in terminal.
+Pedia is a simple command line tool (for bash) for querying wikipedia. The results appear directly in terminal.
 Portions of the underlying code are based on: http://baldwinsoftware.com/blog/2011/04/25/search-google-wikipedia-reservo-from-the-bash-terminal/
 
 Usage is trivially easy:
